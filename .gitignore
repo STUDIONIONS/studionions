@@ -27,3 +27,4 @@ assets/templates/*.*
 assets/templates/help/**/*
 assets/tvs/**/*
 assets/*.*
+src/images/bin/**/*.*

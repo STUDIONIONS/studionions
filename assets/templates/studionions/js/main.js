@@ -1,0 +1,1 @@
+!function(a){console.log("init")}(jQuery);
