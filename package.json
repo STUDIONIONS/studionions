@@ -1,0 +1,19 @@
+{
+  "name": "studionions",
+  "version": "1.0.0",
+  "description": "http://studionions.com site",
+  "main": "package.json",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/STUDIONIONS/studionions.git"
+  },
+  "author": "ProjectSoft <projectsoft2009@yandex.ru>",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/STUDIONIONS/studionions/issues"
+  },
+  "homepage": "http://studionions.com/"
+}

@@ -1,0 +1,18 @@
+{
+  "name": "studionions",
+  "description": "http://studionions.com site",
+  "main": "package.json",
+  "authors": [
+    "ProjectSoft <projectsoft2009@yandex.ru>",
+    "Eared <mr.tutelka@mail.ru>"
+  ],
+  "license": "SEE LICENSE IN LICENSE",
+  "homepage": "http://studionions.com/",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
