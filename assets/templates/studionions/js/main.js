@@ -1,1 +1,1 @@
-!function(a){console.log("init")}(jQuery);
+!function(a){a(".menu-button").click(function(b){b.preventDefault();var c=a(this),d=a(".menu",c.parent());return d.hasClass("open")?(d.removeClass("open"),a("body, html").removeClass("openmenu")):(d.addClass("open"),a("body, html").addClass("openmenu")),!1}),a("nav.menu .menu-list-item").on("mouseup pointerup",function(b){var c=a(this);c.removeClass("down").addClass("down"),setTimeout(function(a){a.removeClass("down")},100,c)}),a("main.main-hero .block-messenger .contact-block a").click(function(b){a(this).blur()})}(jQuery);

@@ -6,7 +6,7 @@ head
 	meta(name="cmsmagazine" content="d8e7426ec72ad3e4ea38b09ebf01284c")
 	title
 		|[*titl*]
-	[*noIndex*]
+	|[*noIndex*]
 	meta(name="title" content="[*titl*]")
 	meta(name="keywords" content="[*keyw*]")
 	meta(name="description" content="[*desc*]")
@@ -18,4 +18,7 @@ head
 	meta(id="ogimage" property="og:image" content="[(site_url)][*og_image*]")
 	meta(property="og:site_name" content="[(site_name)]")
 	meta(property="og:image:secure_url" content="[(site_url)][*og_image*]")
+	script(src="//ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js")
+	script(type="text/javascript")
+		include webfont.js
 	link(href!="[!filemtime? &input=`assets/templates/studionions/css/main.css`!]" rel="stylesheet" type="text/css")

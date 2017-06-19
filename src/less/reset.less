@@ -1,0 +1,55 @@
+* {
+	&, &:before, &:after {
+		box-sizing: border-box;
+	}
+}
+html, body {
+	&.openmenu {
+		overflow: hidden;
+	}
+}
+body {
+	margin: 0;
+	min-height: 100%;
+	background-color: #fff;
+	font-family: Roboto, sans-serif;
+	font-size: 14px;
+	line-height: 20px;
+	color: #333;
+}
+img {
+	max-width: 100%;
+	vertical-align: middle;
+	display: inline-block;
+}
+a, button {
+	.outline-none();
+}
+input {
+	&[type=button],
+	&[type=submit],
+	&[type=checkbox],
+	&[type=file],
+	&[type=reset] {
+		.outline-none();
+	}
+}
+.clearfix {
+	.clearfix();
+}
+.make-mp(margin-top, mt);
+.make-mp(margin-bottom, mb);
+.make-mp(padding-top, pt);
+.make-mp(padding-bottom, pb);
+.section {
+	display: block;
+	width: 100%;
+	height: auto;
+	padding-right: 60px;
+	padding-left: 60px;
+	background-color: #fff;
+	@media (max-width: 991px){
+		padding-right: 0px;
+		padding-left: 0px;
+	}
+}
