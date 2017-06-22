@@ -54,6 +54,7 @@
 							font-size: 12px;
 							font-weight: 700;
 							letter-spacing: 0.4px;
+							user-select: none;
 							&, &:hover, &:focus, &:active {
 								color: #134c53;
 								text-decoration: none;
@@ -69,6 +70,157 @@
 						}
 						@media (min-width: 480px){
 							.text-center();
+						}
+					}
+				}
+				&-content {
+					overflow: hidden;
+					.clearfix();
+					.tab {
+						&-pane {
+							&-content {
+								min-height: 440px;
+								.clearfix();
+								.mix {
+									overflow: hidden;
+								}
+								&-item {
+									min-height: 440px;
+								}
+								&-wrapper {
+									position: relative;
+									height: 440px;
+									overflow: hidden;
+									width: 100.1%;
+									&-image, &-link {
+										transform-style: preserve-3d;
+										transition: transform 200ms;
+										transform: translateX(0px) translateY(0px) translateZ(0px);
+									}
+									&-image {
+										display: block;
+										position: relative;
+										width: 100%;
+										height: 100%;
+										background-repeat: no-repeat;
+										background-position: center center;
+										background-size: cover;
+									}
+									&-link {
+										height: 100px;
+										width: 100%;
+										position: relative;
+										background-color: #00dbd8;
+										a {
+											position: relative;
+											display: block;
+											height: 100%;
+											padding-top: 20px;
+											padding-bottom: 20px;
+											padding-left: 20px;
+											padding-right: 105px;
+											user-select: none;
+											&, &:hover, &:focus, &:active {
+												color: #fff;
+												text-decoration: none;
+											}
+											span {
+												display: block;
+												width: 100%;
+												&.title {
+													font-family: Roboto, sans-serif;
+													margin-top: 0px;
+													margin-bottom: 10px;
+													font-size: 20px;
+													line-height: 1.2em;
+													font-weight: 400;
+													letter-spacing: 0.4px;
+												}
+												.text {
+													font-family: Roboto, sans-serif;
+													color: #134c53;
+													font-size: 14px;
+													line-height: 1.2em;
+													font-weight: 300;
+													letter-spacing: 0.8px;
+												}
+												&.icon {
+													position: absolute;
+													width: 96px;
+													height: 100%;
+													top: 0px;
+													bottom: 0px;
+													right: 0px;
+													background-color: #00b9b7;
+													&:before, &:after {
+														position: absolute;
+														top: 0px;
+														bottom: 0px;
+														right: 0px;
+														left: 0px;
+														font-family: 'StdFont' !important;
+														font-size: 30px;
+														speak: none;
+														font-style: normal;
+														font-weight: normal;
+														font-variant: normal;
+														text-transform: none;
+														-webkit-font-smoothing: antialiased;
+														-moz-osx-font-smoothing: grayscale;
+														display: block;
+														line-height: 100px;
+														text-align: center;
+														width: 100%;
+														height: 100px;
+														transition: transform 200ms;
+														transform-style: preserve-3d;
+														transform: translateX(0px) translateY(0px) translateZ(0px);
+													}
+													&:before {
+														transform: translateX(0px) translateY(0px) translateZ(0px);
+														content: @icon-link_circle;
+													}
+													&:after {
+														transform: translateX(-12px) translateY(0px) translateZ(0px);
+														content: @icon-link_arrow;
+													}
+												}
+											}
+											&:hover {
+												span {
+													&.icon {
+														&:after {
+															transform: translateX(12px) translateY(0px) translateZ(0px);
+														}
+													}
+												}
+											}
+										}
+									}
+									&:hover, &.active {
+										.tab-pane-content-wrapper-image, .tab-pane-content-wrapper-link {
+											transform: translateX(0px) translateY(-100px) translateZ(0px);
+										}
+									}
+								}
+							}
+							.showlink {
+								background-image: data-uri("../bin/loading.svg");
+								background-repeat: no-repeat;
+								background-size: 100% 100%;
+								background-position: center center;
+								width: 30px;
+								height: 30px;
+								cursor: pointer;
+								margin-left: auto;
+								margin-right: auto;
+								display: block;
+								opacity:0.4;
+								transition: opacity .2s;
+								&:hover {
+									opacity:1;
+								}
+							}
 						}
 					}
 				}

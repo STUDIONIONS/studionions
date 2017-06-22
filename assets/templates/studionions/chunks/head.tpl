@@ -17,13 +17,15 @@
   <meta id="ogimage" property="og:image" content="[(site_url)][*og_image*]"/>
   <meta property="og:site_name" content="[(site_name)]"/>
   <meta property="og:image:secure_url" content="[(site_url)][*og_image*]"/>
-  <script src="//ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js" onload="webfontCalback" async="async"></script>
   <script type="text/javascript">
+	window.webfontCalback = function(){
 		WebFont.load({
 			google: {
 				families: ["Roboto:100,100italic,300,300italic,regular,italic,500,700,900:cyrillic,latin"]
 			}
 		});
+	}
   </script>
-  <link href="[!filemtime? &input=`assets/templates/studionions/css/main.css`!]" rel="stylesheet" type="text/css"/>
+  <style>[!filegetcontents? &file=`assets/templates/studionions/css/main.css`!]</style>
 </head>

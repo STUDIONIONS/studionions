@@ -6,34 +6,88 @@
 		.section-tabs
 			.tabs
 				.tabs-wrapper
-					ul.tabs-menu.clearfix
+					ul.tabs-menu.mixtab.clearfix
 						li.link_transform.col-xs-3.active
-							a.tabs-link(href="javascript:;")
+							a.tabs-link.link_transform(href="javascript:;" data-filter="all")
+								span.tabs-link-text
+									|Все
+						li.link_transform.col-xs-3
+							a.tabs-link(href="javascript:;" data-filter=".sites")
 								span.tabs-link-text
 									|Сайты
 						li.link_transform.col-xs-3
-							a.tabs-link.link_transform(href="javascript:;")
+							a.tabs-link.link_transform(href="javascript:;" data-filter=".brand")
 								span.tabs-link-text
 									|Брэнд
 						li.link_transform.col-xs-3
-							a.tabs-link.link_transform(href="javascript:;")
+							a.tabs-link.link_transform(href="javascript:;" data-filter=".content")
 								span.tabs-link-text
 									|Контент
-						li.link_transform.col-xs-3
-							a.tabs-link.link_transform(href="javascript:;")
-								span.tabs-link-text
-									|Все
 					.tabs-button
 						.button
 							
 				.tabs-content
 					.tab-pane
 						.tab-pane-content
-							.col-6(data-filter="")
+							.col-sm-6.mix.tab-pane-content-item.sites
 								.tab-pane-content-wrapper
-									.content-image(style="background-image:url('');")
-									.content-link
-										a(href="javascript;")
+									.tab-pane-content-wrapper-image(style="background-image:url('/assets/templates/studionions/images/grid_1.jpg');")
+									.tab-pane-content-wrapper-link
+										a(href="javascript:;")
+											span.title
+												|Татьяна Алфеева
 											span.text
-												|Текст ссылки
+												|Сайты
 											span.icon
+							.col-sm-6.mix.tab-pane-content-item.brand
+								.tab-pane-content-wrapper
+									.tab-pane-content-wrapper-image(style="background-image:url('/assets/templates/studionions/images/grid_2.jpg');")
+									.tab-pane-content-wrapper-link
+										a(href="javascript:;")
+											span.title
+												|Татьяна Алфеева
+											span.text
+												|Бренд
+											span.icon
+							.col-sm-6.mix.tab-pane-content-item.content
+								.tab-pane-content-wrapper
+									.tab-pane-content-wrapper-image(style="background-image:url('/assets/templates/studionions/images/grid_3.jpg');")
+									.tab-pane-content-wrapper-link
+										a(href="javascript:;")
+											span.title
+												|Татьяна Алфеева
+											span.text
+												|Контент
+											span.icon
+							.col-sm-6.mix.tab-pane-content-item.sites
+								.tab-pane-content-wrapper
+									.tab-pane-content-wrapper-image(style="background-image:url('/assets/templates/studionions/images/grid_4.jpg');")
+									.tab-pane-content-wrapper-link
+										a(href="javascript:;")
+											span.title
+												|Татьяна Алфеева
+											span.text
+												|Сайты
+											span.icon
+							.col-sm-6.mix.tab-pane-content-item.brand
+								.tab-pane-content-wrapper
+									.tab-pane-content-wrapper-image(style="background-image:url('/assets/templates/studionions/images/grid_5.jpg');")
+									.tab-pane-content-wrapper-link
+										a(href="javascript:;")
+											span.title
+												|Татьяна Алфеева
+											span.text
+												|Бренд
+											span.icon
+							.col-sm-6.mix.tab-pane-content-item.content
+								.tab-pane-content-wrapper
+									.tab-pane-content-wrapper-image(style="background-image:url('/assets/templates/studionions/images/grid_6.jpg');")
+									.tab-pane-content-wrapper-link
+										a(href="javascript:;")
+											span.title
+												|Татьяна Алфеева
+											span.text
+												|Контент
+											span.icon
+						a.showlink.mt-60(href="javascript:;")
+							|  

@@ -81,6 +81,23 @@ input {
 		.text-lowercase();
 	}
 }
+.black-wite {
+	width: 60px;
+	height: 4px;
+	max-height: 4px;
+	max-width: 60px;
+	min-height: 4px;
+	min-width: 60px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	background-color: #134c53;
+	&.footer-down {
+		display: none;
+		@media (max-width: 991px){
+			display: block;
+		}
+	}
+}
 .section {
 	display: block;
 	width: 100%;
@@ -91,5 +108,40 @@ input {
 	@media (max-width: 991px){
 		padding-right: 0px;
 		padding-left: 0px;
+	}
+}
+.contact-block {
+	display: flex;
+	width: 140px;
+	height: auto;
+	padding-left: 0px;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	justify-content: space-between;
+	align-items: center;
+	flex: 0 0 auto;
+	li {
+		list-style: none;
+		width: 30px;
+		height: 30px;
+		margin-right: 10px;
+		flex: 0 0 auto;
+		a {
+			&, &:hover, &:focus, &:active {
+				outline: none;
+				text-decoration: none;
+			}
+			img {
+				border-radius: 50%;
+				display: block;
+				transition: transform .1s;
+				transform: scaleX(1) scaleY(1);
+			}
+			&:hover, &:focus {
+				img {
+					transform: scaleX(1.2) scaleY(1.2);
+				}
+			}
+		}
 	}
 }

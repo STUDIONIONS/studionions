@@ -2,7 +2,7 @@ module.exports = function(grunt){
 	var gc = {
 		imageNotyfy: __dirname+'\\src\\notify.png',
 		minifyHtml: false,
-		minifyCss: false
+		minifyCss: true
 	};
 	require('load-grunt-tasks')(grunt);
 	require('time-grunt')(grunt);
@@ -135,6 +135,7 @@ module.exports = function(grunt){
 						'bower_components/jarallax/jarallax/jarallax.js',
 						'bower_components/jarallax/jarallax/jarallax-video.js',
 						'bower_components/arcticModal/arcticmodal/jquery.arcticmodal.js',
+						'bower_components/mixitup/dist/mixitup.js',
 					]
 				}
 			},
