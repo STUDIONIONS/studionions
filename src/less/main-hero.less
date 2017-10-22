@@ -7,11 +7,20 @@ main {
 			padding: 100px 60px 40px;
 			flex-direction: column;
 			align-items: center;
-			background-image: linear-gradient(180deg, rgba(0, 219, 216, .9), rgba(0, 219, 216, .9)), url('../images/main-hero.jpg');
+			background-image: linear-gradient(180deg, rgba(0, 219, 216, .9), rgba(0, 219, 216, .9)), url('@{images}main-hero.jpg');
 			background-position: 0px 0px, 50% 50%;
 			background-size: auto, cover;
 			background-repeat: repeat, no-repeat;
 			background-attachment: scroll, fixed;
+			@media(max-width: 991px){
+				padding: 120px 40px 40px;
+			}
+			@media(max-width: 767px){
+				padding-top: 120px;
+			}
+			@media (max-width: 479px){
+				padding: 100px 20px 15px;
+			}
 			.heading-block {
 				position: relative;
 				display: block;
@@ -34,6 +43,10 @@ main {
 					font-weight: 500;
 					letter-spacing: 1px;
 					text-transform: none;
+					@media(max-width: 767px){
+						font-size: 20px;
+						font-weight: 500;
+					}
 				}
 				.black-wite {
 					width: 60px;

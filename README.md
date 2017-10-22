@@ -1,3 +1,0 @@
-# STUDIONIONS
-
-http://studionions.com/
